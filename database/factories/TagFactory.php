@@ -26,7 +26,8 @@ class TagFactory extends Factory
         $slug = Str::slug($name);
         return [
             'name' => $name,
-            'slug' => $slug
+            'slug' => $slug,
+            'color' => $this->faker->randomElement(['red', 'yellow', 'indigo', 'green', 'blue', 'purple'])
         ];
     }
 }
